@@ -1,0 +1,83 @@
+html {
+	width: 1024px;
+	height: 768px;
+	margin: auto;
+	font-family: arial, serif;
+	background-color: white;
+}
+
+body {
+
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 10px;
+	/*padding-right: 100px; 
+	padding-left: 100px;*/
+	margin: auto;
+	width: 800px;
+}
+h1 {
+	text-align: center;
+}
+h4 {
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    grey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    grey;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    grey;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    grey;
+}
+
+#kontakt {
+	text-align: center;
+}
+#kontakt input {
+	border-style: solid black;
+	border-radius: 3px;
+	width: 150px;
+}
+/*#kontakt input:last-child{
+	width: 10px;
+}*/
+#fashion {
+	margin-left: 10px;
+
+	
+}
+
+#fashion input {
+	width: 25px;
+
+	
+}
+
+#bonus {
+	margin-left: 10px;
+}
+#mail {
+	width: 200px;
+}
+
+textarea {
+	margin: 2px; 
+	width: 664px; 
+	height: 102px;
+}
+
+#send {
+	
+	width: 200px;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: lightgrey;
+}
+

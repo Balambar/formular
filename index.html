@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Grupparbete</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+  <h1>Tävlings formulär</h1>
+  <center>
+  <p> Din åsikt är viktig for oss</p>
+  <p> Ta chansen att vinna en presentkort på 500kr genom att svara på följande formulär!</p>
+  </center>
+
+  <form method="post" action="">
+    <fieldset>
+      <legend>
+        <h4>Kontaktuppgifter</h4></legend>
+
+      <div id="kontakt">
+        <br> 
+
+        Namn:
+        <input type="text" required value="" Name="namn" placeholder="Skriv ditt namn">
+        <br>
+        <br> 
+
+        Ålder:
+        <input type="number" required id="18" Name="number" placeholder=" Ditt ålder" min="18" max="90">
+        <br>
+
+      </div>
+      <br>
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend>
+        <h4>Dina besökt på Fashionmode Butik</h4></legend>
+
+      <div id="fashion">
+        <br> 
+
+        Hur ofta besöker du Fashion butik?
+        <br>
+
+        <br>
+        <input type="radio" name="fraga" value="Varje vecka">Varje vecka
+        <br>
+
+        <br>
+        <input type="radio" name="fraga" value="Varannan vecka">Varannan vecka
+        <br>
+
+        <br>
+        <input type="radio" name="fraga" value="Varje månad">Varje månad
+        <br>
+        <br> 
+
+        Vilka Avdelningar av Fashionmode brukar du besöka?
+        <br>
+        <br>
+        <input type="checkbox" name="barn" value="Barn">Barn
+        <br>
+        <br>
+        <input type="checkbox" name="kvinna" value="Kvinna">Kvinna
+        <br>
+        <br>
+        <input type="checkbox" name="man" value="Man">Man
+        <br>
+        <br>
+        <input type="checkbox" name="underkläder" value="Underkläder">Underkläder
+        <br>
+        <br>
+        <input type="checkbox" name="acces" value="Accesessorer">Accesessorer
+        <br>
+        <br>
+        <input type="checkbox" name="övrigt" value="Övrigt">Övrigt
+        <br>
+        <br>
+      </div>
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend>
+        <h4>Extra bonus</h4></legend>
+
+      <div id="bonus" name="asikt" value="Extra bonus">
+        <br> 
+
+        Du har möjlighet att välja ett plagg på värde av 200kr om du svarar på följande information.
+
+        <br>
+        <br>
+        <br>
+
+        Bästa med Fashionmode Butik?
+        
+        <br>
+        <textarea placeholder="Skriv din åsikt om vad är den bästa med butiken"></textarea>
+
+        <br>
+        <br> 
+
+        Sämsta med Fashionmode Butik?
+        
+        <br>
+        <textarea placeholder="Skriv din åsikt om vad är den sämsta med butiken"></textarea>
+        <br>
+        <br>
+        E-post <input id="mail" type="email" name="email" placeholder="Skriv din e-post">
+        <br>
+        <br>
+
+        Din storlek
+        <select>
+			<option value="xs">XS</option>
+			<option value="s">S</option>
+			<option value="m" selected="selected">M</option>
+			<option value="l">L</option>
+			<option value="xl">XL</option>
+			<option value="xxl">XXL</option>
+        </select>
+        <br>
+		<br>
+		<br>
+		<center>
+				<input id="send" type="submit" value="skicka">
+		</center>
+		<br>
+
+		<br>
+
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
