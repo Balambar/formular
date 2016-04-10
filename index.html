@@ -5,143 +5,156 @@
   <meta charset="utf-8">
   <title>Grupparbete</title>
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="main.js"></script>
 </head>
 
 <body>
-
-<!--Tjena allihopa!!!-->
-
-<!--En Test Till!!!-->
 
   <h1>Tävlings formulär</h1>
   <center>
   <p> Din åsikt är viktig for oss</p>
   <p> Ta chansen att vinna en presentkort på 500kr genom att svara på följande formulär!</p>
   </center>
+  <fieldset>
+    <legend>
+      <h4>Kontaktuppgifter</h4></legend>
 
-  <form method="post" action="">
-    <fieldset>
-      <legend>
-        <h4>Kontaktuppgifter</h4></legend>
+    <div id="kontakt">
+      <br> 
 
-      <div id="kontakt">
-        <br> 
-
-        Namn:
-        <input type="text" required value="" Name="namn" placeholder="Skriv ditt namn">
-        <br>
-        <br> 
-
-        Ålder:
-        <input type="number" required id="18" Name="number" placeholder=" Ditt ålder" min="18" max="90">
-        <br>
-
-      </div>
+      Namn:
+      <input type="text" required value="" Name="namn" placeholder="Skriv ditt namn" id="myName"> *
       <br>
-    </fieldset>
+      <br> 
 
+      Ålder:
+      <input type="number" Name="number" placeholder=" Ditt ålder" min="18" max="90" id="myAge"> *
+      <br>
+      <br>
+
+      E-post:
+      <input type="email" name="email" placeholder="Skriv din e-post" id="myMail"> *
+      <br>
+
+    </div>
     <br>
-    <fieldset>
-      <legend>
-        <h4>Dina besökt på Fashionmode Butik</h4></legend>
+  </fieldset>
 
-      <div id="fashion">
-        <br> 
+  <br>
+  <fieldset>
+    <legend>
+      <h4>Dina besökt på Fashionmode Butik</h4></legend>
 
-        Hur ofta besöker du Fashion butik?
-        <br>
+    <div id="fashion">
+    <form id="myForm1">
+      <br> 
 
-        <br>
-        <input type="radio" name="fraga" value="Varje vecka">Varje vecka
-        <br>
+      Hur ofta besöker du Fashion butik? *
+      <br>
 
-        <br>
-        <input type="radio" name="fraga" value="Varannan vecka">Varannan vecka
-        <br>
+      <br>
+      <input type="radio" name="fraga" value="Varje vecka" id="item0">Varje vecka
+      <br>
 
-        <br>
-        <input type="radio" name="fraga" value="Varje månad">Varje månad
-        <br>
-        <br> 
+      <br>
+      <input type="radio" name="fraga" value="Varannan vecka" id="item1">Varannan vecka
+      <br>
 
-        Vilka Avdelningar av Fashionmode brukar du besöka?
-        <br>
-        <br>
-        <input type="checkbox" name="barn" value="Barn">Barn
-        <br>
-        <br>
-        <input type="checkbox" name="kvinna" value="Kvinna">Kvinna
-        <br>
-        <br>
-        <input type="checkbox" name="man" value="Man">Man
-        <br>
-        <br>
-        <input type="checkbox" name="underkläder" value="Underkläder">Underkläder
-        <br>
-        <br>
-        <input type="checkbox" name="acces" value="Accesessorer">Accesessorer
-        <br>
-        <br>
-        <input type="checkbox" name="övrigt" value="Övrigt">Övrigt
-        <br>
-        <br>
-      </div>
-    </fieldset>
+      <br>
+      <input type="radio" name="fraga" value="Varje månad" id="item2">Varje månad
+      <br>
+      <br> 
+    </form>  
 
-    <br>
-    <fieldset>
-      <legend>
-        <h4>Extra bonus</h4></legend>
+    <form id="myForm2">
+      Vilka Avdelningar av Fashionmode brukar du besöka? *
+      <br>
+      <br>
+      <input type="checkbox" name="barn" value="Barn" id="sak0">Barn
+      <br>
+      <br>
+      <input type="checkbox" name="kvinna" value="Kvinna" id="sak1">Kvinna
+      <br>
+      <br>
+      <input type="checkbox" name="man" value="Man" id="sak2">Man
+      <br>
+      <br>
+      <input type="checkbox" name="underkläder" value="Underkläder" id="sak3">Underkläder
+      <br>
+      <br>
+      <input type="checkbox" name="acces" value="Accesessorer" id="sak4">Accesessorer
+      <br>
+      <br>
+      <input type="checkbox" name="övrigt" value="Övrigt" id="sak5">Övrigt
+      <br>
+      <br>
+    </form>  
+    </div>
+  </fieldset>
 
-      <div id="bonus" name="asikt" value="Extra bonus">
-        <br> 
+  <br>
+  <fieldset>
+    <legend>
+      <h4>Extra bonus</h4></legend>
 
-        Du har möjlighet att välja ett plagg på värde av 200kr om du svarar på följande information.
+    <div id="bonus" name="asikt" value="Extra bonus">
+      <br> 
 
-        <br>
-        <br>
-        <br>
+      Du har möjlighet att välja ett plagg på värde av 200kr om du svarar på följande information.
 
-        Bästa med Fashionmode Butik?
-        
-        <br>
-        <textarea placeholder="Skriv din åsikt om vad är den bästa med butiken"></textarea>
+      <br>
+      <br>
+      <br>
 
-        <br>
-        <br> 
+      Bästa med Fashionmode Butik?
+      
+      <br>
+      <textarea placeholder="Skriv din åsikt om vad är den bet bästa med butiken" id="extra1"></textarea>
 
-        Sämsta med Fashionmode Butik?
-        
-        <br>
-        <textarea placeholder="Skriv din åsikt om vad är den sämsta med butiken"></textarea>
-        <br>
-        <br>
-        E-post <input id="mail" type="email" name="email" placeholder="Skriv din e-post">
-        <br>
-        <br>
+      <br>
+      <br> 
 
-        Din storlek
-        <select>
-			<option value="xs">XS</option>
-			<option value="s">S</option>
-			<option value="m" selected="selected">M</option>
-			<option value="l">L</option>
-			<option value="xl">XL</option>
-			<option value="xxl">XXL</option>
-        </select>
-        <br>
-		<br>
-		<br>
-		<center>
-				<input id="send" type="submit" value="skicka">
-		</center>
-		<br>
+      Sämsta med Fashionmode Butik?
+      
+      <br>
+      <textarea placeholder="Skriv din åsikt om vad är den bet sämsta med butiken" id="extra2"></textarea>
+      <br>
+      <br>
 
-		<br>
+      Din storlek
+      <select>
+		<option value="xs">XS</option>
+		<option value="s">S</option>
+		<option value="m" selected="selected">M</option>
+		<option value="l">L</option>
+		<option value="xl">XL</option>
+		<option value="xxl">XXL</option>
+      </select>
+      <br>
+	<br>
 
-      </div>
-    </fieldset>
-  </form>
+
+    </div>
+  </fieldset><br>
+  <i>* Obligatoriska för att kunna skicka formuläret.</i><br><br>
+  <center>
+      <button id="mySend" type="submit" value="skicka" onclick="sendInfo()">Skicka</button>
+  </center>
+
+  <script type="text/javascript">
+    
+    var myName = document.getElementById('myName');
+    var myAge = document.getElementById('myAge');
+    var myMail = document.getElementById('myMail');
+
+    var myForm1 = document.forms[0].length;
+    var myForm2 = document.forms[1].length;
+
+    var fel1 = ["/", String.fromCharCode(92), ":", "*", "?", "<", ">", "|", String.fromCharCode(34), "!", "_", "%", "£", "¤", "$", ".", ";", "&", "+", "§", "(", ")", "{", "}", "[", "]", "@"];
+
+    var fel2 = [String.fromCharCode(32), "/", String.fromCharCode(92), ":", "*", "?", "<", ">", "|", String.fromCharCode(34), "!", "%", "£", "¤", "$", ";", "+", "§", "(", ")", "{", "}", "[", "]"];
+
+  </script>
 
 </body>
 

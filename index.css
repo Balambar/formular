@@ -10,7 +10,7 @@ body {
 
 	border-radius: 10px;
 	border: 1px solid black;
-	padding: 10px;
+	padding: 15px;
 	/*padding-right: 100px; 
 	padding-left: 100px;*/
 	margin: auto;
@@ -63,7 +63,7 @@ h4 {
 #bonus {
 	margin-left: 10px;
 }
-#mail {
+#myMail {
 	width: 200px;
 }
 
@@ -73,7 +73,7 @@ textarea {
 	height: 102px;
 }
 
-#send {
+#mySend {
 	
 	width: 200px;
 	font-size: 20px;
