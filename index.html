@@ -9,12 +9,14 @@
 </head>
 
 <body>
-
-  <h1>Tävla & Vinn!</h1>
-  <center>
+ <center>
+  <h1>TÄVLA & VINN!</h1>
+ 
   <p> Din åsikt är viktig for oss</p>
   <p> Ta chansen att vinna en presentkort på 500kr genom att svara på följande formulär!</p>
   </center>
+  <br>  
+
   <fieldset>
     <legend>
       <h4>Kontaktuppgifter</h4></legend>
@@ -65,6 +67,7 @@
       <br>
       <br> 
     </form>  
+    <br>
 
     <form id="myForm2">
       Vilka Avdelningar av Fashionmode brukar du besöka? *
@@ -93,21 +96,20 @@
   </fieldset>
 
   <br>
-  <fieldset>
-    <legend>
-      <h4>Extra bonus</h4></legend>
+  
+      <div id="flip"><h3>Vinn en stickad tröja(värde 300kr) <button id="tryck">Tryck här</button></h3></div>
 
-	  <div id="bonus" name="asikt" value="Extra bonus">Du har möjlighet att välja ett plagg till ett värde av 200kr, om du svarar på följande information.<button>Tryck här</button></div>
-     <div id ="panel">
-     
-     <h4> För att vinna detta priset, svara på frågorna:</h4>  
-	
+<div id="panel">
+
+<h4> För att vinna detta priset, svara på frågorna:</h4>
+<br>
+
       <br>
 
       Bästa med Fashionmode Butik?
       
       <br>
-      <textarea placeholder="Skriv din åsikt om vad är den bet bästa med butiken" id="extra1"></textarea>
+      <textarea placeholder="Skriv din åsikt om vad är den det bästa med butiken" id="extra1"></textarea>
 
       <br>
       <br> 
@@ -115,7 +117,7 @@
       Sämsta med Fashionmode Butik?
       
       <br>
-      <textarea placeholder="Skriv din åsikt om vad är den bet sämsta med butiken" id="extra2"></textarea>
+      <textarea placeholder="Skriv din åsikt om vad är den det sämsta med butiken" id="extra2"></textarea>
       <br>
       <br>
 
@@ -133,27 +135,19 @@
 
 
     </div>
-  </fieldset><br>
+
+  <br>
+   
   <i>* Obligatoriska för att kunna skicka formuläret.</i><br><br>
+
+  <br>
   <center>
       <button id="mySend" type="submit" value="skicka" onclick="sendInfo()">Skicka</button>
   </center>
+   <br> <br>
 
-     
-   </body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-   <script>
-	 ///Faj 
-	  
-	$(document).ready(function(){
-    	$("#bonus").click(function(){
-        	$("#panel").slideToggle("slow");
-		});
-	});
-
-	  
-
+  <script type="text/javascript">
+    
     var myName = document.getElementById('myName');
     var myAge = document.getElementById('myAge');
     var myMail = document.getElementById('myMail');
@@ -166,4 +160,27 @@
     var fel2 = [String.fromCharCode(32), "/", String.fromCharCode(92), ":", "*", "?", "<", ">", "|", String.fromCharCode(34), "!", "%", "£", "¤", "$", ";", "+", "§", "(", ")", "{", "}", "[", "]"];
 
   </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+var best = document.getElementById("best");
+var worst = document.getElementById("worst");
+var size = $("#size").val();
+var age = document.getElementById('age');
+$('#send').on('click', function(){
+
+  
+alert(text);
+
+});
+</script>
+
+</body>
+
 </html>

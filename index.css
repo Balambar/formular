@@ -1,7 +1,8 @@
 html {
-	width: 1024px;
-	height: 768px;
-	margin: auto;
+	width: auto;
+
+	
+	padding: 4%;
 	font-family: arial, serif;
 	background-color: white;
 }
@@ -17,7 +18,20 @@ body {
 	width: 800px;
 }
 h1 {
-	text-align: center;
+	font: bold 55px/95px Helvetica, Sans-Serif; 
+
+	margin-bottom: 25px; 
+	margin-top: 25px;
+}
+
+#fontb {
+	font: bold 45px/95px Helvetica, Sans-Serif; 
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+#membership {
+	
 }
 h4 {
 }
@@ -50,19 +64,28 @@ h4 {
 }*/
 #fashion {
 	margin-left: 10px;
-
-	
 }
 
 #fashion input {
 	width: 25px;
-
-	
 }
 
 #bonus {
 	margin-left: 10px;
 }
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    
+    border: solid 1px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
 #myMail {
 	width: 200px;
 }
@@ -73,11 +96,23 @@ textarea {
 	height: 102px;
 }
 
+#tryck {
+
+	font-size: 15px;
+	border-radius: 5px;
+	background-color: lightgrey;
+	
+
+	}
+	
+
 #mySend {
 	
 	width: 200px;
+	height: 36px;
 	font-size: 20px;
 	border-radius: 5px;
 	background-color: lightgrey;
+
 }
 
