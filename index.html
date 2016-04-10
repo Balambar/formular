@@ -10,7 +10,7 @@
 
 <body>
 
-  <h1>Tävlings formulär</h1>
+  <h1>Tävla & Vinn!</h1>
   <center>
   <p> Din åsikt är viktig for oss</p>
   <p> Ta chansen att vinna en presentkort på 500kr genom att svara på följande formulär!</p>
@@ -97,13 +97,11 @@
     <legend>
       <h4>Extra bonus</h4></legend>
 
-    <div id="bonus" name="asikt" value="Extra bonus">
-      <br> 
-
-      Du har möjlighet att välja ett plagg på värde av 200kr om du svarar på följande information.
-
-      <br>
-      <br>
+	  <div id="bonus" name="asikt" value="Extra bonus">Du har möjlighet att välja ett plagg till ett värde av 200kr, om du svarar på följande information.<button>Tryck här</button></div>
+     <div id ="panel">
+     
+     <h4> För att vinna detta priset, svara på frågorna:</h4>  
+	
       <br>
 
       Bästa med Fashionmode Butik?
@@ -141,8 +139,21 @@
       <button id="mySend" type="submit" value="skicka" onclick="sendInfo()">Skicka</button>
   </center>
 
-  <script type="text/javascript">
-    
+     
+   </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+   <script>
+	 ///Faj 
+	  
+	$(document).ready(function(){
+    	$("#bonus").click(function(){
+        	$("#panel").slideToggle("slow");
+		});
+	});
+
+	  
+
     var myName = document.getElementById('myName');
     var myAge = document.getElementById('myAge');
     var myMail = document.getElementById('myMail');
@@ -155,7 +166,4 @@
     var fel2 = [String.fromCharCode(32), "/", String.fromCharCode(92), ":", "*", "?", "<", ">", "|", String.fromCharCode(34), "!", "%", "£", "¤", "$", ";", "+", "§", "(", ")", "{", "}", "[", "]"];
 
   </script>
-
-</body>
-
 </html>
