@@ -1,14 +1,13 @@
 html {
 	width: auto;
-
-	
-	padding: 1%;
+	padding: 3%;
 	font-family: arial, serif;
-	background-color: white;
+	background-image: url("fashion2.jpg");
+	background-size: 100% 100% ;
+	background-repeat: no-repeat;
 }
 
 body {
-
 	border-radius: 10px;
 	border: 1px solid black;
 	padding: 15px;
@@ -19,9 +18,13 @@ body {
 }
 h1 {
 	font: bold 55px/95px Helvetica, Sans-Serif; 
-
 	margin-bottom: 25px; 
 	margin-top: 25px;
+}
+p {
+	font-family: Arial;
+	font-size: 17px;
+
 }
 
 #fontb {
@@ -102,9 +105,7 @@ textarea {
 	border-radius: 5px;
 	background-color: lightgrey;
 	
-
-	}
-	
+}	
 
 #mySend {
 	
@@ -113,6 +114,5 @@ textarea {
 	font-size: 20px;
 	border-radius: 5px;
 	background-color: lightgrey;
-
 }
 
